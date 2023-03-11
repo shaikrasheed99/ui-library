@@ -1,6 +1,7 @@
 import Tooltip from "./tooltip";
 import Dropdown from "./dropdowns";
 import Tabs from "./tabs";
+import Snackbar from "./snackbar";
 
 const tooltipElement = document.querySelector(".tooltip");
 const tooltip = new Tooltip(tooltipElement);
@@ -15,3 +16,10 @@ dropdowns.forEach((dropdown) => {
 const tabsElement = document.querySelector(".tabs");
 const tabs = new Tabs(tabsElement);
 tabs.init();
+
+const snackbar = new Snackbar();
+snackbar.init();
+const snackbarButton = document.querySelector(".snackbar-button");
+snackbarButton.addEventListener("click", () => {
+    snackbar.show("you clicked me!!")
+});

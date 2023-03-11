@@ -1,0 +1,18 @@
+.snackbar {
+    width: 20vw;
+    padding: 1.5vw;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    margin-left: -11.5vw;
+    top: 0;
+    border-radius: 0 0 2vw 2vw;
+    background-color: #ff6565;
+    color: #fff;
+    margin-top: -100%;
+    transition: all 0.3s;
+}
+
+.snackbar.active {
+    margin-top: 0;
+}
